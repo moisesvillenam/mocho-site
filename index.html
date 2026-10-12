@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Mocho — Independent AI Research & Technology Initiative</title>
-  <meta name="description" content="Mocho is a student-led independent research and technology initiative exploring statistics, data science, AI-assisted research, and accessible tools for education and public benefit." />
+  <meta name="description" content="Mocho is a student-led independent research and technology initiative working on applied statistics, official statistics, health economics, data science, AI-assisted research and accessible technology." />
   <meta name="theme-color" content="#0b0d12" />
 
   <meta property="og:title" content="Mocho — Independent AI Research & Technology Initiative" />
@@ -288,6 +288,101 @@
       color: var(--muted);
     }
 
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .project-card {
+      position: relative;
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background:
+        radial-gradient(circle at 100% 0%, rgba(185,255,103,.08), transparent 30%),
+        linear-gradient(180deg, var(--panel-strong), var(--panel));
+      box-shadow: var(--shadow);
+    }
+
+    .project-topline {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 26px;
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .10em;
+    }
+
+    .project-status {
+      padding: 5px 9px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .project-card h3 {
+      margin: 0 0 10px;
+      font-size: 29px;
+      line-height: 1.12;
+      letter-spacing: -.025em;
+    }
+
+    .project-subtitle {
+      margin: 0 0 20px !important;
+      color: #dfe3e9 !important;
+      font-size: 16px;
+      font-weight: 650;
+    }
+
+    .project-card > p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 24px;
+    }
+
+    .tags span {
+      padding: 7px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(123,216,255,.18);
+      background: rgba(123,216,255,.055);
+      color: #dcecf4;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .project-note {
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .project-note strong {
+      color: var(--text);
+    }
+
+    .project-disclosure {
+      margin-top: 18px;
+      padding: 18px 20px;
+      border-left: 2px solid var(--accent);
+      background: rgba(255,255,255,.025);
+      color: var(--muted);
+      font-size: 13px;
+      border-radius: 0 12px 12px 0;
+    }
+
     .split {
       display: grid;
       grid-template-columns: 1.1fr .9fr;
@@ -401,7 +496,102 @@
       .hero-meta,
       .section-head,
       .grid,
-      .split { grid-template-columns: 1fr; }
+  
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .project-card {
+      position: relative;
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background:
+        radial-gradient(circle at 100% 0%, rgba(185,255,103,.08), transparent 30%),
+        linear-gradient(180deg, var(--panel-strong), var(--panel));
+      box-shadow: var(--shadow);
+    }
+
+    .project-topline {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 26px;
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .10em;
+    }
+
+    .project-status {
+      padding: 5px 9px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .project-card h3 {
+      margin: 0 0 10px;
+      font-size: 29px;
+      line-height: 1.12;
+      letter-spacing: -.025em;
+    }
+
+    .project-subtitle {
+      margin: 0 0 20px !important;
+      color: #dfe3e9 !important;
+      font-size: 16px;
+      font-weight: 650;
+    }
+
+    .project-card > p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 24px;
+    }
+
+    .tags span {
+      padding: 7px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(123,216,255,.18);
+      background: rgba(123,216,255,.055);
+      color: #dcecf4;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .project-note {
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .project-note strong {
+      color: var(--text);
+    }
+
+    .project-disclosure {
+      margin-top: 18px;
+      padding: 18px 20px;
+      border-left: 2px solid var(--accent);
+      background: rgba(255,255,255,.025);
+      color: var(--muted);
+      font-size: 13px;
+      border-radius: 0 12px 12px 0;
+    }
+
+    .split { grid-template-columns: 1fr; }
       .section-head { gap: 18px; }
       .hero-meta { gap: 16px; }
       .card { min-height: 220px; }
@@ -427,6 +617,7 @@
 
       <nav class="navlinks" aria-label="Primary navigation">
         <a href="#about">About</a>
+        <a href="#projects">Projects</a>
         <a href="#focus">Focus</a>
         <a href="#principles">Principles</a>
         <a class="github-link" href="https://github.com/moisesvillenam" target="_blank" rel="noreferrer">GitHub ↗</a>
@@ -445,9 +636,9 @@
         </h1>
 
         <p class="lead">
-          Mocho is an independent research and technology initiative exploring practical ways to use
-          statistics, data science and artificial intelligence to create accessible tools for research,
-          education and public benefit.
+          Mocho is an independent research and technology initiative working at the intersection of
+          statistics, data science and artificial intelligence — from official statistics and health-economics
+          research to accessible tools for education and public benefit.
         </p>
 
         <div class="actions">
@@ -493,6 +684,86 @@
               <strong>Disclosure:</strong> Mocho is an independent initiative and is not affiliated with or endorsed by ESPOL.
             </p>
           </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Selected work</p>
+            <h2>Applied statistics with real public-data problems.</h2>
+          </div>
+          <p class="section-copy">
+            Selected statistical work developed for Ecuador's National Institute of Statistics and Censuses (INEC),
+            focused on the Health Satellite Accounts and on improving the continuity and timeliness of official
+            health-sector information.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="project-year">2026 · Official statistics</span>
+              <span class="project-status">Research project</span>
+            </div>
+            <h3>Health Satellite Accounts Backcasting</h3>
+            <p class="project-subtitle">
+              Reconstruction of Production, Intermediate Consumption and Gross Value Added series for 2003–2006.
+            </p>
+            <p>
+              Developed a backcasting workflow to make historical Health Satellite Account series compatible with
+              the current methodological framework. The work combined classification harmonization, value indices,
+              aggregation, rescaling and redistribution procedures to preserve accounting consistency across
+              methodological changes.
+            </p>
+            <div class="tags" aria-label="Project methods">
+              <span>Backcasting</span>
+              <span>Official Statistics</span>
+              <span>Health Economics</span>
+              <span>Index Methods</span>
+              <span>Data Harmonization</span>
+            </div>
+            <div class="project-note">
+              <strong>Why it matters:</strong> creates a more coherent historical series for long-run analysis of
+              Ecuador's health-sector production and value added.
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span class="project-year">2026 · Time series</span>
+              <span class="project-status">Forecasting project</span>
+            </div>
+            <h3>Out-of-Pocket Health Expenditure Forecasting</h3>
+            <p class="project-subtitle">
+              ARIMAX-based forecasting of household out-of-pocket health expenditure for 2025–2029.
+            </p>
+            <p>
+              Built a time-series forecasting workflow using Health Satellite Account data from 2007–2024 and
+              public health expenditure as an exogenous variable. The analysis included stationarity assessment,
+              model selection, residual diagnostics, ex-post validation and uncertainty intervals.
+            </p>
+            <div class="tags" aria-label="Project methods">
+              <span>ARIMAX</span>
+              <span>Time Series</span>
+              <span>Forecasting</span>
+              <span>Model Validation</span>
+              <span>Health Economics</span>
+            </div>
+            <div class="project-note">
+              <strong>Why it matters:</strong> explores how statistical forecasting can partially reduce the lag
+              between real-world conditions and the availability of official health indicators.
+            </div>
+          </article>
+        </div>
+
+        <div class="project-disclosure">
+          Project descriptions summarize research reports authored by Moises Villena Mejia. References to INEC
+          describe the institutional project context and the official statistical framework used in the work; they
+          do not imply that Mocho is an official INEC program or product.
         </div>
       </div>
     </section>
@@ -607,11 +878,11 @@
           <p class="kicker">Contact</p>
           <h2>Interested in research, collaboration or what Mocho is building?</h2>
           <p>
-            Follow the work on GitHub. A domain-based contact email will be added as the project infrastructure is completed.
+            For research, collaboration or project inquiries, reach Mocho directly through its domain email or follow the work on GitHub.
           </p>
           <div class="actions">
             <a class="btn primary" href="https://github.com/moisesvillenam" target="_blank" rel="noreferrer">GitHub ↗</a>
-            <a class="btn secondary" href="mailto:contact@mocho.dev">contact@mocho.dev</a>
+            <a class="btn secondary" href="mailto:moises@mocho.dev">moises@mocho.dev</a>
           </div>
         </div>
       </div>
